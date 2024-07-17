@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Signup</title>
+        <link rel="stylesheet" href="index.css" />
+    </head>
+    <body>
+        <div class="center-div">
+            <h1 class="title">Sign Up</h1>
+            <form action="/" method="post">
+                <input class="part" type="text" name="firstname" placeholder="First Name">
+                <input class="part" type="text" name="lastname"  placeholder="Last Name">
+                <input class="full" type="text" name="mobileno" placeholder="Mobile No."> 
+                <input class="full" type="text" name="emailaddr" placeholder="Email Address">
+                <input class="part" type="password" name="password" placeholder="Password">
+                <input class="part" type="password" name="passwordconf"  placeholder="Confirm Password">  
+                <br><b>I agree</b> <input class="smallpart" type="checkbox" name="agree" value="agree"> 
+                <small>By clicking 
+                    <span><button class="smallbutton button2" disabled>Register</button></span>
+                    , you agree to <a href="https://www.google.com/">the terms and conditions</a>
+                    set out by the site, including our cookie use.</small>
+                <input class="button button2 part" type="submit" value="Register">
+                <a href="https://www.google.com/" class="button button1 part">Sign in</a>
+            </form>
+        </div>
+    </body>
+</html>
