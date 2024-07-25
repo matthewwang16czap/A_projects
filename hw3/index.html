@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Assignment 3</title>
+        <script src="myscript.js"></script>
+        <script defer>
+            // 1
+            document.write("<h1> 12345's reversed number is: " + num_reverse(12345) + "</h1>");
+            // 2
+            document.write("<h1> madam is palindrome: " + is_palindrome("madam") + "</h1>");
+            // 3
+            document.write("<h1> combinations of 'dog': " + combinations("dog") + "</h1>");
+            // 4
+            document.write("<h1> alphabetical order of 'webmaster': " + alphabetical_order("webmaster") + "</h1>");
+            // 5
+            document.write("<h1> capitalize 'the quick brown fox': " + capitalize("the quick brown fox") + "</h1>");
+            // 6
+            document.write("<h1> longest word of 'Web Development Tutorial': " + longest_word("Web Development Tutorial") + "</h1>");
+            // 7
+            document.write("<h1> number of vowels of 'The quick brown fox': " + count_vowels('The quick brown fox') + "</h1>");
+            // 8
+            document.write("<h1> number 277 is prime: " + is_prime(277) + "</h1>");
+            // 9
+            document.write("<h1> typeof undefined: " + type_of(undefined) + "</h1>");
+            // 10
+            document.write("<h1> identity matrix: " + identity(4) + "</h1>");
+            console.table(identity(4));
+            // 11
+            document.write("<h1> the second lowest and second greatest numbers of [3,2,4,1,5]: " + low_grd_2nd([3,2,4,1,5]) + "</h1>");
+            // 12
+            document.write("<h1> 8128 is perfect: " + is_perfect(8128) + "</h1>");
+            // 13
+            document.write("<h1> 8128's factors: " + factors(8128) + "</h1>");
+            // 14
+            document.write("<h1> 30 values of [25, 10, 3] coins: " + to_coins(30, [25, 10, 3]) + "</h1>");
+            // 15
+            document.write("<h1> 9^3: " + exponent(9,3) + "</h1>");
+            // 16
+            document.write("<h1> unique of 'thequickbrownfoxjumpsoverthelazydog': " + unique("thequickbrownfoxjumpsoverthelazydog") + "</h1>");
+            // 17
+            document.write("<h1> counts 'thequickbrownfoxjumpsoverthelazydog': " + JSON.stringify(count('thequickbrownfoxjumpsoverthelazydog')) + "</h1>");
+            // 18
+            document.write("<h1> search 5 in [1,3,5,7,8,10]: " + binary_search([1,3,5,7,8,10], 8) + "</h1>");
+            // 19
+            document.write("<h1> [1,3,5,7,8,10] larger than 6: " + arr_larger([1,3,5,7,8,10], 6) + "</h1>");
+            // 20
+            document.write("<h1> 10 length id: " + generate_id(10) + "</h1>");
+            // 21
+            document.write("<h1> 2 length subsets of [1,2,3,4,5]: " + JSON.stringify(get_subsets([1,2,3,4,5], 2)) + "</h1>");
+            // 22
+            document.write("<h1> count 'o' in 'microsoft.com': " + count_letter('microsoft.com', 'o') + "</h1>");
+            // 23
+            document.write("<h1> the first not repeated character of 'abacddbec': " + first_non_repeat('abacddbec') + "</h1>");
+            // 24
+            document.write("<h1> Bubble sort of [12, 345, 4, 546, 122, 84, 98, 64, 9, 1, 3223, 455, 23, 234, 213]: " + JSON.stringify(bubble_sort([12, 345, 4, 546, 122, 84, 98, 64, 9, 1, 3223, 455, 23, 234, 213])) + "</h1>");
+            // 25
+            document.write("<h1> longest country name in [Australia, Germany, United States of America]: " + longest_country_name(["Australia", "Germany", "United States of America"]) + "</h1>");
+            // 26
+            document.write("<h1> longest substring in 'thequickbrownfoxjumpsoverthelazydog' without repeating characters: " + longest_non_repeat_substring('thequickbrownfoxjumpsoverthelazydog') + "</h1>");
+            // 27
+            document.write("<h1>longest palindromes of 'abracadabra': " + longest_palindromes('abracadabra') + "</h1>");
+            // 28
+            document.write("<h1>execute previous function: " + execute_func(longest_palindromes, 'abracadabra') + "</h1>");
+            // 29
+            document.write("<h1>get previous function name: " + get_func_name(execute_func) + "</h1>");
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
+
+
