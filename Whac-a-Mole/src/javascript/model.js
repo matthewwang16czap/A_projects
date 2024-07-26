@@ -4,6 +4,7 @@ export class State {
 	);
 	#score = 0;
 	#lefttime = 30;
+	#mole_num = 0;
 
 	constructor(view) {
 		this.view = view;
@@ -47,5 +48,13 @@ export class State {
 		const template = this.view.update_lefttime(this.#lefttime);
 		let element = document.querySelector(this.view.element_specifiers.lefttime);
 		this.view.render(element, template);
+	}
+
+	get mole_num() {
+		return this.#mole_num;
+	}
+
+	set mole_num(num) {
+		this.#mole_num = num;
 	}
 }
