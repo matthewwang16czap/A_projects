@@ -4,6 +4,7 @@ export const View = (() => {
 		grid_container: ".grid-container",
 		scoreboard: ".scoreboard",
 		lefttime: ".lefttime",
+		startbutton: ".startbutton",
 	};
 
 	const render = (element, template) => {

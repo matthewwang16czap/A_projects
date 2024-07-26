@@ -16,6 +16,21 @@ export const Controller = ((view) => {
 		});
 	};
 
+	const start_game = () => {
+		const startbutton = document.querySelector(view.element_specifiers.startbutton);
+		console.log(startbutton);
+		startbutton.addEventListener("click", (e) => {
+			console.log("here");
+			// click button to start game
+			setInterval(()=>{
+				// start timing
+				state.lefttime--;
+			
+			}, 1000);
+		});
+		
+	};
+
 	const init = () => {
 		// reset state
 		state.block_status = Array(12).fill(0).map(
@@ -28,6 +43,7 @@ export const Controller = ((view) => {
 	const bootstrap = () => {
 		init();
 		click_to_find();
+		start_game();
 	};
 
 	return { bootstrap };
